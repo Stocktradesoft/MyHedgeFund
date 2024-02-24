@@ -12,6 +12,7 @@ The software made using Python 3.10, Plotly Dash Multipage App, PyQt6, matplotli
 
 Based on breeze api of icicidirect I have created a graphical(GUI) app for analysis of almost 40 stocks and plotting candlestick chart   with higherLows and LowerHighs. I named it MyHedgeFund. I think it will for helping traders and investors in making decision on trading multiple stocks (diversify investment) and will also help in trading/ investing in profitable stocks.  link to app is  https://github.com/Stocktradesoft/MyHedgeFund
 
+disclaimer: The app is in development phase and should only be used for technical analysis/ education purpose. The app must not be treated as Buy/ sell advise. please apply your own mind beforetrading/ or take advice from government approved financial advisor/ expert.   
 
 ![Python Logo](https://www.python.org/static/community_logos/python-logo.png)
 
