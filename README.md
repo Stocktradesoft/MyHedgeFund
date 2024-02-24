@@ -24,7 +24,3 @@ Based on breeze api of icicidirect I have created a graphical(GUI) app for analy
 
 ![HedgeFund002](https://github.com/Stocktradesoft/MyHedgeFund/assets/161134443/b0857677-d340-46af-80d5-476b5bbe7795)
 
-
-
-
-#icicidirect #breezeapi #breeze-connect #python #plotly #Dash #matplotlib #PyQt #webapp 
