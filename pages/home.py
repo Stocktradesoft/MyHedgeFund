@@ -297,7 +297,7 @@ def generate_table(n_clicks_data, n_clicks_table):
             [
                 html.H3("GAIN Table for 1000 trade each stock"),
                 html.H4("CELLS below date columns show change in close w.r.t. initial_price"),
-                html.H4("BUY when close_diff row value gives a sudden huge drop and start growing"),
+                html.H4("To Analyse if BUY when close_diff row value gives a sudden huge drop and start growing"),
                 dash_table.DataTable(
                     id='table',
                     columns=[{'name': col, 'id': col} for col in pivoted_df.columns],
