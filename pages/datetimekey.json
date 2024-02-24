@@ -1,0 +1,8 @@
+{
+    "key_api": "XXXXXXXXXXXXXXXXXXXXXX",
+    "key_secret": "XXXXXXXXXXXXXXXXXXXXXX",
+    "key_session": "XXXXXXX",
+    "time_interval": "1day",
+    "from_date": "2022-09-15T06:00:00.000Z",
+    "to_date": "2024-02-23T20:00:00.000Z"
+}
