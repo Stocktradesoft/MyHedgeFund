@@ -22,8 +22,8 @@ from_date = config_data.get("from_date", "")
 to_date = config_data.get("to_date", "")
 
 # Initialize the BreezeConnect object
-#breeze = BreezeConnect(api_key=key_api)
-#breeze.generate_session(api_secret=key_secret, session_token=key_session)
+breeze = BreezeConnect(api_key=key_api)
+breeze.generate_session(api_secret=key_secret, session_token=key_session)
 
 # List of stock codes to replace APAIND with
 stock_codes = [
@@ -209,9 +209,10 @@ def generate_table(n_clicks_data, n_clicks_table):
     #        print("data_df_hl",data_df["hl"])
             data_df.reset_index(drop=True, inplace=True)
 
-            data_df["lh"] =  (data_df["lh"] - (data_df["lh"] * 0.004))   # 0.01 is 1%  hence use 0.002 means 0.2%
-            data_df["hl"] =  (data_df["hl"] + (data_df["hl"] * 0.004))   # 0.01 is 1%  hence use 0.002 means 0.2%
-
+            data_df["lh"] =  (data_df["lh"] - (data_df["lh"] * 0.04))   # 0.01 is 1%  hence use 0.002 means 0.2%
+            data_df["hl"] =  (data_df["hl"] + (data_df["hl"] * 0.04))   # 0.01 is 1%  hence use 0.002 means 0.2%
+            data_df["lh7"] = data_df["lh"].rolling(window=7).mean()
+            data_df["hl7"] = data_df["hl"].rolling(window=7).mean()
             # Reset index and drop duplicates
             data_df.reset_index(drop=True, inplace=True)
             data_df.drop_duplicates(inplace=True)
@@ -297,7 +298,7 @@ def generate_table(n_clicks_data, n_clicks_table):
             [
                 html.H3("GAIN Table for 1000 trade each stock"),
                 html.H4("CELLS below date columns show change in close w.r.t. initial_price"),
-                html.H4("To Analyse if BUY when close_diff row value gives a sudden huge drop and start growing"),
+                html.H4("BUY when close_diff row value gives a sudden huge drop and start growing"),
                 dash_table.DataTable(
                     id='table',
                     columns=[{'name': col, 'id': col} for col in pivoted_df.columns],
