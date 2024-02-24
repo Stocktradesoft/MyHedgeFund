@@ -12,9 +12,15 @@ The software made using Python 3.10, Plotly Dash Multipage App, PyQt6, matplotli
 
 ![Python Logo](https://www.python.org/static/community_logos/python-logo.png)
 
-![Dash Logo](https://en.wikipedia.org/wiki/Plotly#/media/File:Plotly-logo.png)
 
-![QT Logo](https://en.wikipedia.org/wiki/PyQt#/media/File:Python_and_Qt.svg)
+
+![HedgeFund001](https://github.com/Stocktradesoft/MyHedgeFund/assets/161134443/67533f62-8dc3-4877-9d65-56a389f30949)
+
+
+
+![HedgeFund002](https://github.com/Stocktradesoft/MyHedgeFund/assets/161134443/2658b15e-514a-44c7-a8c1-9006dff5253c)
+
+
 
 
 
