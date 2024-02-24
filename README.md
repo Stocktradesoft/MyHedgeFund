@@ -27,4 +27,4 @@ Based on breeze api of icicidirect I have created a graphical(GUI) app for analy
 
 
 
-
+#icicidirect #breezeapi #breeze-connect #python #plotly #Dash #matplotlib #PyQt #webapp 
