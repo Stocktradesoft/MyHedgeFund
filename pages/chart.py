@@ -9,7 +9,8 @@ import numpy as np
 from dash.exceptions import PreventUpdate
 import sys
 import matplotlib
-matplotlib.use('agg')
+#matplotlib.use('TkAgg')   # this was crashing again and again however plot chart in pop up window 
+matplotlib.use('Agg')  # this plot png on app
 import matplotlib.pyplot as plt
 import mplfinance as mpf
 import io
@@ -107,12 +108,8 @@ def update_chart(n_clicks, stock_code, last_rows):
             # Select the last rows based on the input value
             df_last_rows = df.iloc[-last_rows:]
             
-            # Create additional lines for 'lh' and 'hl' for the last rows
-            lh = df_last_rows["high"].rolling(window=14).max()
-            hl = df_last_rows["low"].rolling(window=14).min()
-
-            # Plot OHLC candles for the last rows
-            ap = mpf.make_addplot(df_last_rows[["lh", "hl"]])
+            # Plot OHLC candles for the last rows using existing 'lh', 'hl', 'lh7', and 'hl7' columns
+            ap = mpf.make_addplot(df_last_rows[["lh", "hl", "lh7", "hl7"]])
             mpf.plot(df_last_rows.set_index("date"), type='candle', style='charles', title=f"Stock Code: {stock_code}", ylabel="Price", volume=True, ylabel_lower="Volume", figratio=(1, 1), addplot=ap)
             
             buffer = io.BytesIO()
@@ -127,7 +124,6 @@ def update_chart(n_clicks, stock_code, last_rows):
             return html.Div(f"No data found for stock code: {stock_code}")
     else:
         return html.Div()
-
 
 
 if __name__ == "__main__":
