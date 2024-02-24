@@ -1,5 +1,5 @@
 MyHedgeFund  v0.0.1
-  (C) 2023 Ajay Kumar <traderfeather805@gmail.com>
+  (C) 2024 Ajay Kumar <traderfeather805@gmail.com>
 This program may be freely redistributed under the terms of the GNU GPL v2
 
 [ DESCRIPTION ]
