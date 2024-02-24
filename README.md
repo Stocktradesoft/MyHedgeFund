@@ -15,7 +15,7 @@ The software made using Python 3.10, Plotly Dash Multipage App, PyQt6, matplotli
 
 
 
-
+![HedgeFund001](https://github.com/Stocktradesoft/MyHedgeFund/assets/161134443/d94c0846-50e8-465d-985b-dce948e49933)
 
 
 ![HedgeFund002](https://github.com/Stocktradesoft/MyHedgeFund/assets/161134443/2658b15e-514a-44c7-a8c1-9006dff5253c)
